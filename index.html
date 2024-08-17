@@ -1,9 +1,26 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1></h1>
-        <script src="index.js"></script>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Password Generator</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="container">
+        <section class="section">
+            <h1>Generate a <span id="change-color">random password</span></h1>
+            <p id="never">Never use an insecure password again.</p>
+            <button class="gen-btn" onclick="generatePW()">Generate passwords</button>
+            <button class="gen-btn" onclick="delClear()">Clear</button>
+            <hr id="line">
+            <section id="random-section">
+                <p class="random" id="one-choice">Your first choice</p>
+                <p class="random" id="two-choice">Your second choice</p>
+            </section>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>
