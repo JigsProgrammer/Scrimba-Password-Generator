@@ -11,6 +11,10 @@
         <section class="section">
             <h1>Generate a <span id="change-color">random password</span></h1>
             <p id="never">Never use an insecure password again.</p>
+            <form id="password-length">
+                <label for="length">Enter your desired password length:</label>
+                <input type="number" id="length" min="1" max="100" required>
+            </form>
             <button class="gen-btn" onclick="generatePW()">Generate passwords</button>
             <button class="gen-btn" onclick="delClear()">Clear</button>
             <hr id="line">
