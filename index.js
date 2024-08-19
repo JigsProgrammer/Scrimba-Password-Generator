@@ -3,7 +3,6 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let oneChoice = document.getElementById("one-choice")
 let twoChoice = document.getElementById("two-choice")
-let passwordLength = 12
 let firstChoice = ""
 let secondChoice = ""
 
@@ -13,7 +12,10 @@ function generateRandomChars() {
 }
 
 function generatePW() {
-    for (let i = 0; i < passwordLength; i++) {
+    const passwordLength = document.getElementById("length")
+    const lengthValue = passwordLength.value
+    const numberValue = parseFloat(lengthValue)
+    for (let i = 0; i < numberValue; i++) {
         firstChoice += generateRandomChars()
         secondChoice += generateRandomChars()
         oneChoice.textContent = firstChoice
@@ -27,4 +29,16 @@ function delClear() {
     secondChoice = ""
     oneChoice.textContent = "Your first choice"
     twoChoice.textContent = "Your second choice"
+}
+
+copyContentOne = () => {
+    let copiedOne = document.getElementById("one-choice").innerHTML;   
+    navigator.clipboard.writeText(copiedOne);
+    alert("Copied first.")
+}
+
+copyContentTwo = () => {
+    let copiedTwo = document.getElementById("two-choice").innerHTML;   
+    navigator.clipboard.writeText(copiedTwo);
+    alert("Copied second.")
 }

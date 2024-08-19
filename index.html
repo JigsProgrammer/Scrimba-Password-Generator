@@ -12,15 +12,15 @@
             <h1>Generate a <span id="change-color">random password</span></h1>
             <p id="never">Never use an insecure password again.</p>
             <form id="password-length">
-                <label for="length">Enter your desired password length:</label>
-                <input type="number" id="length" min="1" max="100" required>
+                <label for="length">Enter your desired password length:</label><br>
+                <input type="number" id="length" min="1" max="100" placeholder="1 - 100" required>
             </form>
             <button class="gen-btn" onclick="generatePW()">Generate passwords</button>
             <button class="gen-btn" onclick="delClear()">Clear</button>
             <hr id="line">
             <section id="random-section">
-                <p class="random" id="one-choice">Your first choice</p>
-                <p class="random" id="two-choice">Your second choice</p>
+                <p class="random" id="one-choice" onclick="copyContentOne()">Your first choice</p>
+                <p class="random" id="two-choice" onclick="copyContentTwo()">Your second choice</p>
             </section>
         </section>
     </div>
