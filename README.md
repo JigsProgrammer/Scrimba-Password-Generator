@@ -16,3 +16,13 @@ In implementing a password length setter in the project, I did the basics of put
 In doing the JavaScript, I learned that that I need to store the .value method of the variable from which I got using the ID to another variable. In this, I also learned that this only returns a string. Hence, I needed to store this second variable in a third variable that converts this second variable into a number using parseFloat().
 
 ---COPY-ON-CLICK---
+The copy-on-click implementation was total new to me. I honestly don't know how to do it, so I just searched it up on Google and AI. There were several different code snippets I saw focusing mainly either on Clipboard API or document.execCommand.
+
+To be honest, I'm not entirely sure which one is the one I implemented in this project. Perhaps, it's Clipboard API. Apparently, the function used in here is an arrow function. It's still quite unclear to me as to what the differences are with traditional function.
+
+The .innerHTML seems to function like a .textContent, but this returns the text content of the element, including all spacing and inner HTML tags. Literally, an inner HTML vibe.
+
+The navigator object (?) seems to be quite unfamiliar to me. The .clipboard property of the navigator returns a Clipboard object used to read and write the clipboard's contents. Finally, the .writeText() method writes the specified text to the system clipboard.
+
+---TOGGLES---
+This part was hard to implement. I might have to progress a little more to restart implementing this feature.
